@@ -1,0 +1,22 @@
+-   A non-reference function argumernt const can be
+    declared as for example int f(const int);
+
+-   It means that we are declaring the function argument 
+    as constant which specifies a variable's value as 
+    constant which prevents the programmer to modifying it
+    throught the code.
+
+-   We might want to do this if we want to document the program 
+    clearly and enforce the documentation, so for example if a user 
+    wants to do performance optimizations, tehy can do it without,
+    the fear of damaging the data reference because const won't allow
+    the data to be changed as it will produce a compiler error.
+
+-   Some people might want to avoid doing this though, the reason is 
+    that there can be too much "const" use can cause some problems in the 
+    code for example if is a code that needs to be dynamic and change the 
+    data referenced, if is using "const" it will produce a compiler error
+    and the data wont be changed, but if the "const" is omitted then the 
+    data can be changed whic in some codes is needed, because sometimes
+    is a disadvantage for the data to stay without changing throught the 
+    whole program.
